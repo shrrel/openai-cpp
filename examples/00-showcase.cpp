@@ -3,7 +3,7 @@
 #include <iostream>
 
 int main() {
-    openai::start("sk-QJt-RF2Jumuscl2RSsozPg","",true,"https://agino.me/"); // Will use the api key provided by `OPENAI_API_KEY` environment variable
+    openai::start("sk-xxx","",true,"https://agino.me/"); // Will use the api key provided by `OPENAI_API_KEY` environment variable
     // openai::start("your_API_key", "optional_organization"); // Or you can handle it yourself
 
     auto completion = openai::chat().create(R"(
