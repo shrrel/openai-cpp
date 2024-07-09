@@ -3,14 +3,14 @@
 #include <iostream>
 
 int main() {
-    openai::start(); // Will use the api key provided by `OPENAI_API_KEY` environment variable
+    openai::start("sk-QJt-RF2Jumuscl2RSsozPg","",true,"https://agino.me/"); // Will use the api key provided by `OPENAI_API_KEY` environment variable
     // openai::start("your_API_key", "optional_organization"); // Or you can handle it yourself
 
-    auto completion = openai::completion().create(R"(
+    auto completion = openai::chat().create(R"(
     {
-        "model": "text-davinci-003",
-        "prompt": "Say this is a test",
-        "max_tokens": 7,
+        "model": "gpt-3.5-turbo",
+        "messages": [{"role": "user", "content": "What things can I do in Amsterdam?"}],
+        "max_tokens": 4096,
         "temperature": 0
     }
     )"_json); // Using user-defined (raw) string literals
