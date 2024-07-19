@@ -1,1 +1,7 @@
 本次课程设计源码见aichat文件夹和example/openai-test
+
+小组成员github账号如下：
+缪奔翔 miao12310 
+苏劭晗 shrrel
+肖登戈 giopnm 
+张天天 stars-platinum
