@@ -1,0 +1,1 @@
+本次课程设计源码见aichat文件夹和example/openai-test
